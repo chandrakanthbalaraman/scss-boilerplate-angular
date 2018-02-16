@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@charset 'UTF-8';
+
+//1. Utilities Properties
+@import
+    './assets/partials/utils/_variables',
+    './assets/partials/utils/_mixins',
+    './assets/partials/utils/_functions',
+    './assets/partials/utils/_reset',
+    './assets/partials/utils/_extend';
+
+
+//2. Base Properties    
+
+@import 
+    './assets/partials/base/_base',
+    './assets/partials/base/_colors',
+    './assets/partials/base/_typography';
+
+//3. Module Properties    
+
+@import 
+    './assets/partials/module/_buttons',
+    './assets/partials/module/_forms',
+    './assets/partials/module/_modal';
+    
+
+//4. Layout Properties    
+
+@import 
+'./assets/partials/layout/_header',
+'./assets/partials/layout/_footer';
