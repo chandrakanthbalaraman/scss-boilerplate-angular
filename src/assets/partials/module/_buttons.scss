@@ -1,0 +1,17 @@
+/* ========================================================================== */
+/* Button Properties */
+/* ========================================================================== */
+.button {
+    // Generates modifier classes for .button@each $theme, $color in 
+    @each $theme, $color in $button-colors {
+     &--#{$theme} {
+       background-color: $color;
+       color: transparentize(white, .2);
+     }
+     &--#{$theme}:hover,
+     &--#{$theme}:focus {
+       background-color: shade($color, 20%);
+       color: white;
+     }
+    }
+}
