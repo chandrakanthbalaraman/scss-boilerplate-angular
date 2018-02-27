@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,4 +10,5 @@ export class ButtonComponent implements OnInit {
     constructor() { }
 
     ngOnInit() { }
+
 }
