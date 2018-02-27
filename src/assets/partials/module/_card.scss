@@ -1,0 +1,16 @@
+.card{
+    max-width: 100%;
+    width: em($card-min-width,$base-size);
+    min-height: em($card-min-width,$base-size);
+    position: relative;
+    @include flexbox;
+    @include flex-direction(column);
+    @include box-shadow(1);
+    border: 1px solid rgba(34,36,38,.15);
+    float: none;
+    margin: em($card-four-margin,$base-size);
+    &.center{
+        @include justify-content(center);
+        @include align-items(center);
+    }
+}

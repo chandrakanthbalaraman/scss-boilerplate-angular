@@ -1,0 +1,71 @@
+/* ========================================================================== */
+/* Button Properties */
+/* ========================================================================== */
+.k-btn {
+    // Generates modifier classes for .button@each $theme, $color in 
+    font-size: rem($base-size);
+    padding: em($btn-pad-y,$base-size) em($btn-pad-x,$base-size);
+    font-weight: $btn-fon-weight;
+    line-height: em($btn-min-ht,$base-size);
+    @extend %btn-prop;
+    min-height: em($btn-min-ht,$base-size);
+    border-radius: em($btn-border-radius,$base-size);
+    border:$btn-border-width solid transparent;
+    @include transition($btn-transition);
+    &.animated{
+      overflow:hidden;
+      position: relative;
+      .hide-content{
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        top: 50%;
+        left: 0%;
+        right: auto;
+        transform: scale(1.5);
+        margin-top: -#{em(8px,$base-size)};
+        @include transition($transition-base);
+      }
+      .show-content{
+        position: relative;
+        left: auto;
+        right: auto;
+        opacity: 1;
+        transform: scale(1);
+        @include transition($transition-base);
+      }
+      &:hover{
+        .hide-content{
+          left: 0%;
+          right: auto;
+          opacity: 1;
+          transform: scale(1);
+        }
+        .show-content{
+          left: auto;
+          right: auto;
+          opacity: 0;
+          transform: scale(.75);
+        } 
+      }
+      &.fade{
+
+      }
+      
+    }
+}
+@each $theme, $color in $theme-colors {
+  .k-#{$theme} {
+    @include  btn-color($color, $color);
+  }
+ }
+
+ @each $theme, $color in $theme-colors {
+  .k-outline-#{$theme} {
+    @include  btn-outline-color($color);
+  }
+ }
+
+ .k-round{
+  border-radius: em($btn-border-ellipsis,$base-size);
+ }

@@ -4,6 +4,8 @@
 //1. Utilities Properties
 @import
     './assets/partials/utils/_variables',
+    './assets/partials/utils/_map',
+    './assets/partials/utils/_flexbox',
     './assets/partials/utils/_mixins',
     './assets/partials/utils/_functions',
     './assets/partials/utils/_reset',
@@ -21,6 +23,8 @@
 
 @import 
     './assets/partials/module/_buttons',
+    './assets/partials/module/_card',
+    './assets/partials/module/_grid',
     './assets/partials/module/_forms',
     './assets/partials/module/_modal';
     
@@ -29,4 +33,6 @@
 
 @import 
 './assets/partials/layout/_header',
+'./assets/partials/layout/_sidebar',
+'./assets/partials/layout/_layout',
 './assets/partials/layout/_footer';

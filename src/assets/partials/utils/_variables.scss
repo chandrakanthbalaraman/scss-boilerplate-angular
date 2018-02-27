@@ -1,0 +1,85 @@
+//
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+//Required Colors
+$white:    #fff !default;
+$black:    #000 !default;
+
+//gray colors variant
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+//Colors
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+
+//Theme Colors 
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-300 !default;
+$dark:          $gray-800 !default;
+
+//Default properties
+$transition-base:  all .2s ease-in-out !default;
+
+//Button Variables
+$btn-fon-weight:700;
+$btn-border-radius:3px;
+$btn-border-ellipsis:20px;
+$btn-min-ht: 16px;
+$btn-border-width : 1px;
+
+$btn-pad-y:9px;
+$btn-pad-x:15px;
+
+$btn-pad-sm-y:5px;
+$btn-pad-sm-x:12px;
+
+$btn-pad-lg-y:12px;
+$btn-pad-lg-x:18px;
+
+$btn-transition:  color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+//Card Properties
+$card-min-width:300px;
+$card-min-height:300px;
+
+$card-two-margin:20px;
+$card-three-margin:18px;
+$card-four-margin:12px;
+$card-five-margin:12px;
+$card-six-margin:10px;
+
+
+//Comp Colors
+$border-color : #dddddd;
+
+//Base Size
+$base-size : 16px;
+
+//Sidebar width
+$sidebar-width: 200px;
+
+//Menubar Height
+$topbar-height: 70px;
+
