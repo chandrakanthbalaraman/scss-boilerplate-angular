@@ -2,6 +2,7 @@
     .#{$color} { 
       &::before {
         content: '#{$value}';
+        @include color-yiq($value);
         font-family: monospace;
         float: right;
         text-transform: uppercase;
