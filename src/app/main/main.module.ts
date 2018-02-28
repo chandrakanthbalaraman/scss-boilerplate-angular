@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './main.component';
 import { ButtonComponent } from './pages/buttons/buttons.component';
 import { SharedModule } from '../core/modules/shared.module';
+import { ColorsComponent } from './pages/colors/colors.component';
 
 
 const routes: Routes = [
@@ -13,15 +14,16 @@ const routes: Routes = [
         component : ButtonComponent
     },
     {
-        path      : '**',
-        redirectTo: 'button'
+        path : 'colors',
+        component : ColorsComponent
     }
 ]
 
 @NgModule({
     declarations: [
         MainComponent,
-        ButtonComponent
+        ButtonComponent,
+        ColorsComponent 
     ],
     imports: [ 
         CommonModule,
