@@ -31,14 +31,17 @@
             transition: .5s all linear;
             cursor: pointer;
             @extend %ex-web-sidebar__item;
-            &.active{
-                color:$activeColor;
-                background-color: $activeBgColor;
+            a{
+                &.active{
+                    color:$activeColor;
+                    background-color: $activeBgColor;
+                }
+                &:hover{
+                    color:$activeColor;
+                    background-color: $activeBgColor;
+                }
             }
-            &:hover{
-                color:$activeColor;
-                background-color: $activeBgColor;
-            }
+            
         }
       }  
     }
@@ -57,12 +60,13 @@
   %ex-web-sidebar__item{
     list-style: none;
     overflow: hidden;
-    padding: em(8px,$base-size) em(15px,$base-size);
     a{  
+        padding: em(8px,$base-size) em(15px,$base-size);
         font-size: em(14px,$base-size);
         font-weight: 600;
         color: inherit;
         text-decoration:none;
+        display: block
     }
 }
 
