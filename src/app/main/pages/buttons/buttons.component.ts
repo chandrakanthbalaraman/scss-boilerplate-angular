@@ -1,6 +1,5 @@
 
 import { Component, OnInit } from '@angular/core';
-
 @Component({
     selector: 'app-button-comp',
     templateUrl: './buttons.component.html',
@@ -9,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit {
     constructor() { }
 
-    ngOnInit() { }
+    ngOnInit() { 
+        
+    }
 
+    
 }

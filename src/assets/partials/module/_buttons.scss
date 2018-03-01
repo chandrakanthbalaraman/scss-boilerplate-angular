@@ -52,33 +52,33 @@
      
       
     }
-}
-@each $theme, $color in $theme-colors {
-  .k-#{$theme} {
-    @include  btn-color($color, $color);
-  }
- }
-
- @each $theme, $color in $theme-colors {
-  .k-outline-#{$theme} {
-    @include  btn-outline-color($color);
-  }
- }
-
- .k-round{
-  border-radius: em($btn-border-ellipsis,$base-size);
- }
- .k-block{
-   display: block;
-   width: 100%;
-}
-
-.k-lg{
-  font-size:rem($btn-font-size-lg);
-  padding: em($btn-pad-lg-y,$base-size) em($btn-pad-lg-x,$base-size);
-}
-
-.k-sm{
-  font-size:rem($btn-font-size-sm);
-  padding: em($btn-pad-sm-y,$base-size) em($btn-pad-sm-x,$base-size);
+    @each $theme, $color in $theme-colors {
+      &.k-#{$theme} {
+        @include  btn-color($color, $color);
+      }
+     }
+    
+     @each $theme, $color in $theme-colors {
+      &.k-outline-#{$theme} {
+        @include  btn-outline-color($color);
+      }
+     }
+    
+     &.k-round{
+      border-radius: em($btn-border-ellipsis,$base-size);
+     }
+     &.k-block{
+       display: block;
+       width: 100%;
+    }
+    
+    &.k-lg{
+      font-size:rem($btn-font-size-lg);
+      padding: em($btn-pad-lg-y,$base-size) em($btn-pad-lg-x,$base-size);
+    }
+    
+    &.k-sm{
+      font-size:rem($btn-font-size-sm);
+      padding: em($btn-pad-sm-y,$base-size) em($btn-pad-sm-x,$base-size);
+    }
 }

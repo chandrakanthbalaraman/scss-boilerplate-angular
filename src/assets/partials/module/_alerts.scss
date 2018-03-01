@@ -1,0 +1,19 @@
+
+/* ========================================================================== */
+/* Alert Properties */
+/* ========================================================================== */
+.k-alert {
+  font-size: rem($base-size);
+  display: block;
+  padding: em($alert-md-y,$base-size) em($alert-md-x,$base-size);
+  border-radius: em($alert-border-radius,$base-size);
+  position: relative;
+  margin-bottom: em($alert-margin-btm,$base-size);
+  border:$btn-border-width solid transparent;
+  @each $theme, $color in $theme-colors{
+    &.k-#{$theme}{
+      @include alert-color($color);
+    }
+  }
+}
+    

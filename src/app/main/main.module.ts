@@ -6,6 +6,7 @@ import { MainComponent } from './main.component';
 import { ButtonComponent } from './pages/buttons/buttons.component';
 import { SharedModule } from '../core/modules/shared.module';
 import { ColorsComponent } from './pages/colors/colors.component';
+import { AlertsComponent } from './pages/alerts/alerts.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,10 @@ const routes: Routes = [
     {
         path : 'colors',
         component : ColorsComponent
+    },
+    {
+        path : 'alerts',
+        component : AlertsComponent
     }
 ]
 
@@ -23,7 +28,8 @@ const routes: Routes = [
     declarations: [
         MainComponent,
         ButtonComponent,
-        ColorsComponent 
+        ColorsComponent,
+        AlertsComponent 
     ],
     imports: [ 
         CommonModule,

@@ -1,0 +1,13 @@
+
+<div class="web-container__section">
+    <header>
+        <div header-title>Alerts</div>
+        <div header-desc>Play with Alerts's</div>
+    </header>
+    <div class="web-container__detail">
+        <div *ngFor="let type of themeTypeArr" class="k-alert k-{{type}}">
+            {{type}} alert
+        </div>
+    </div>
+</div>
+
