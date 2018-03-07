@@ -14,16 +14,20 @@
       #{$prop}: #fff;
     }
   }
-
+/* ========================================================================== */
+/* Button Shadow */
+/* ========================================================================== */
 @mixin box-shadow($type: 1){
     @if($type==none){
         box-shadow: none
     }
     @else{
-        box-shadow: 0 1px 2px 0 rgba(34,36,38,.15); 
+        box-shadow: 0 #{2*$type}px #{3*$type}px 0 rgba(34,36,38,.15); 
     }
 }
-
+/* ========================================================================== */
+/* Button Color */
+/* ========================================================================== */
 @mixin btn-color($background,$border,$hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)){
     @include color-yiq($background);
     background-color: $background;
@@ -36,13 +40,9 @@
     }
 }
 
-@mixin alert-color($color){
-    background-color: lighten($color,38%);
-    color:darken($color,25%);
-    border-color: lighten($color,23%);
-    @include box-shadow(1);
-}
-
+/* ========================================================================== */
+/* Btn Outline Color */
+/* ========================================================================== */
 @mixin btn-outline-color($color, $active-background: $color, $active-border: $color){
     color: $color;
     background-color: transparent;
@@ -55,6 +55,37 @@
     }
 }
 
+
+/* ========================================================================== */
+/* Alert Color */
+/* ========================================================================== */
+@mixin alert-color($color){
+    background-color: lighten($color,38%);
+    color:darken($color,25%);
+    border-color: lighten($color,23%);
+    @include box-shadow(1);
+}
+
+/* ========================================================================== */
+/* Card Color */
+/* ========================================================================== */
+@mixin card-color($color){
+    // background-color: lighten($color,38%);
+    background-color: $color;
+    @include color-yiq($color);
+    border-color: lighten($color,23%);
+    .k-link{
+        &.animate{
+            &:before{
+                @include color-yiq($color,background-color);
+            }
+        }
+    }
+    
+}
+/* ========================================================================== */
+/* Transition Effect Properties */
+/* ========================================================================== */
 @mixin transition($transition...) {
       @if length($transition) == 0 {
         transition: $transition-base;
@@ -63,3 +94,14 @@
       }
     }
 
+/* ========================================================================== */
+/* Opactiy Properties */
+/* ========================================================================== */
+
+@mixin opacity($type) {
+    @if $type >=0 && $type <=1 {
+      opacity: #{$type/10};
+    } @else {
+      opacity: 1;
+    }
+  }

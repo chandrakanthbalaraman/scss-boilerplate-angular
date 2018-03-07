@@ -1,27 +1,14 @@
-
 <div class="web-sidebar web-sidebar--primary">
     <div class="web-sidebar__title">
         <h3>K UI Docs</h3>
     </div>
     <ul class="web-sidebar__menu">
-        <li class="web-sidebar__item">
-            <a href="javascript:void(0);" routerLink="/pages/button" routerLinkActive="active">
-                Button
+        <li class="web-sidebar__item" *ngFor="let obj of menuArr">
+            <a href="javascript:void(0);" [routerLink]="obj.link" routerLinkActive="active">
+                {{obj.name}}
             </a>
-           
-        </li>
-        <li class="web-sidebar__item">
-            <a href="javascript:void(0);" routerLink="/pages/colors" routerLinkActive="active">
-                Colors
-            </a>
-           
-        </li>
-        <li class="web-sidebar__item">
-            <a href="javascript:void(0);" routerLink="/pages/alerts" routerLinkActive="active">
-                Alerts
-            </a>
-           
-        </li>
-    </ul>
-</div>    
 
+        </li>
+
+    </ul>
+</div>

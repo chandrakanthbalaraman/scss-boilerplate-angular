@@ -1,13 +1,30 @@
 
 <div class="web-container__section">
     <header>
-        <div header-title>Alerts</div>
-        <div header-desc>Play with Alerts's</div>
+        <div header-title>Alert</div>
+        <div header-desc>Play with Alert</div>
     </header>
     <div class="web-container__detail">
+        <h3>Basic Alert</h3>
         <div *ngFor="let type of themeTypeArr" class="k-alert k-{{type}}">
             {{type}} alert
         </div>
+        <hr/>
+        <h3>List Alert</h3>
+        <div class="k-alert k-primary">
+            <div class="header">Alert Header</div>
+            <ul class="list">
+                <li>You can now have cover images on blog pages</li>
+                <li>Drafts will now auto-save while writing</li>
+            </ul>
+        </div>
+        <div class="k-alert k-warning">
+                <div class="header">Warning Alert Header</div>
+                <ul class="list">
+                    <li>You can now have cover images on blog pages</li>
+                    <li>Drafts will now auto-save while writing</li>
+                </ul>
+            </div>
     </div>
 </div>
 

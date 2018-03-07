@@ -10,7 +10,7 @@ import { SharedModule } from './core/modules/shared.module';
 const appRoutes: Routes = [
   {
       path: '',
-      redirectTo: 'pages/button',
+      redirectTo: 'pages/alert',
       pathMatch: 'full',
   },
   {

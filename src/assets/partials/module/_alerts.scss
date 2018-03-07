@@ -1,4 +1,11 @@
 
+//Alert Properties
+
+$alert-md-y:15px;
+$alert-md-x:18px;
+$alert-border-radius:3px;
+$alert-margin-btm:10px;
+
 /* ========================================================================== */
 /* Alert Properties */
 /* ========================================================================== */
@@ -9,11 +16,20 @@
   border-radius: em($alert-border-radius,$base-size);
   position: relative;
   margin-bottom: em($alert-margin-btm,$base-size);
-  border:$btn-border-width solid transparent;
+  border:$border-width solid transparent;
   @each $theme, $color in $theme-colors{
     &.k-#{$theme}{
       @include alert-color($color);
     }
+  }
+  .header{
+    font-size:em(18px,$base-size);
+    font-weight: 700;
+    
+  }
+  .list{
+    @include opacity(8);
+    @extend %list-unstyle;
   }
 }
     

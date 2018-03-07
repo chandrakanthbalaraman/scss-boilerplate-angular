@@ -1,7 +1,27 @@
 
+//Button Variables
+$btn-fon-weight:700;
+$btn-border-radius:3px;
+$btn-border-ellipsis:20px;
+$btn-min-ht: 16px;
+$btn-border-width : 1px;
+
+$btn-pad-y:9px;
+$btn-pad-x:15px;
+
+$btn-pad-sm-y:5px;
+$btn-pad-sm-x:12px;
+$btn-font-size-sm:12px;
+
+$btn-pad-lg-y:12px;
+$btn-pad-lg-x:18px;
+$btn-font-size-lg:30px;
+
+$btn-transition:  color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 /* ========================================================================== */
 /* Button Properties */
 /* ========================================================================== */
+
 .k-btn {
     // Generates modifier classes for .button@each $theme, $color in 
     font-size: rem($base-size);

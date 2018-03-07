@@ -7,7 +7,27 @@ import { Component, OnInit } from '@angular/core';
     styles: []
 })
 export class SidebarComponent implements OnInit {
-    constructor() { }
+    menuArr:Array<any> = [];
+    constructor() {
+        this.menuArr=[
+            {
+                name:'Alert',
+                link:'/pages/alert'
+            },
+            {
+                name:'Button',
+                link:'/pages/button'
+            },
+            {
+                name:'Card',
+                link:'/pages/card'
+            },
+            {
+                name:'Color',
+                link:'/pages/color'
+            }
+        ]
+     }
 
     ngOnInit() { }
 }
