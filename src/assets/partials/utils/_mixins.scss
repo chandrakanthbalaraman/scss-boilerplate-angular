@@ -74,6 +74,10 @@
     background-color: $color;
     @include color-yiq($color);
     border-color: lighten($color,23%);
+    .card-header,
+    .card-footer{
+        @include color-yiq($color,border-color);
+    }
     .k-link{
         &.animate{
             &:before{
