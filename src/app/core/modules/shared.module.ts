@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from '../components/sidebar/sidebar.component';
 import { HeaderComponent } from '../components/header/header.component';
+import { AppService } from '../services/app.service';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,9 @@ import { HeaderComponent } from '../components/header/header.component';
         SidebarComponent,
         HeaderComponent
     ],
-    providers: [],
+    providers: [
+        AppService
+    ],
 })
 
 export class SharedModule {}

@@ -1,13 +1,7 @@
 
 /* ========================================================================== */
-/*  Mixin Properties*/
+/*  Extend Properties*/
 /* ========================================================================== */
-
-
-/* ========================================================================== */
-/* Margin,Padding properties */
-/* ========================================================================== */
-
 %m-0{
     margin: 0;
 }
@@ -18,18 +12,4 @@
 
 %bor-btm-1{
     border-bottom: em(1px,$base-size) solid $border-color;
-}
-
-%btn-prop{
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    font-style: normal;
-    text-decoration: none;
-    text-align: center;
-    background-image: none;
-    cursor: pointer;
-    display: inline-block;
-    box-shadow: none;
-
 }

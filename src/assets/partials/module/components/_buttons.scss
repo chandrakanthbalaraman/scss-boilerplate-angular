@@ -18,6 +18,20 @@ $btn-pad-lg-x:18px;
 $btn-font-size-lg:30px;
 
 $btn-transition:  color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+%btn-prop{
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  background-image: none;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: none;
+
+}
 /* ========================================================================== */
 /* Button Properties */
 /* ========================================================================== */
