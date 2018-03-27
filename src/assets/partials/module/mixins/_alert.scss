@@ -4,7 +4,6 @@
 /* Alert Color */
 /* ========================================================================== */
 @mixin alert-color($color){
-    @debug #{$color};
     background-color: lighten($color,38%);
     color:darken($color,25%);
     border-color: lighten($color,23%);

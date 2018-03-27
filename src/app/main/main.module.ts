@@ -8,6 +8,7 @@ import { SharedModule } from '../core/modules/shared.module';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { AlertsComponent } from './pages/alerts/alerts.component';
 import { CardsComponent } from './pages/cards/cards.component';
+import { LabelsComponent } from './pages/labels/labels.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,10 @@ const routes: Routes = [
     {
         path : 'card',
         component : CardsComponent
+    },
+    {
+        path : 'label',
+        component : LabelsComponent
     }
 ]
 
@@ -35,7 +40,8 @@ const routes: Routes = [
         ButtonComponent,
         ColorsComponent,
         AlertsComponent,
-        CardsComponent 
+        CardsComponent,
+        LabelsComponent 
     ],
     imports: [ 
         CommonModule,

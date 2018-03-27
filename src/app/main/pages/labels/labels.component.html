@@ -1,0 +1,32 @@
+<div class="web-container__section">
+    <header>
+        <div header-title>Label</div>
+        <div header-desc>Play with Label</div>
+    </header>
+    <div class="web-container__detail">
+        <h3>Basic Label</h3>
+        <div class="k-label k-primary">
+            23
+        </div>
+        <hr/>
+        <h3>Icon Label</h3>
+        <div class="k-label k-primary">
+            <i class="fa fa-address-book icon"></i>
+            23
+        </div>
+        <hr/>
+        <h3>Color Label</h3>
+        <div *ngFor="let type of iconThemeColor" class="k-label k-{{type.type}}">
+            <i class="fa fa-{{type.icon}} icon"></i>
+            23
+        </div>
+        <hr/>
+        <h3>Square Rounded Label</h3>
+        <div class="k-label k-primary k-round">
+            <i class="fa fa-tasks icon"></i>
+            <span class="k-notify-text k-danger">23</span>
+        </div>
+        <hr/>
+
+    </div>
+</div>

@@ -10,6 +10,12 @@ export class AppService {
     }
 
     postCodes(data): Observable<any>{
+        let path = "http://localhost:3000/upload-scss"
+        let headers = new HttpHeaders();
+        headers.set('Content-Type', 'application/json');
+        return this.http.post(path,data,{headers:headers});
+    }
+    convertScss(data): Observable<any>{
         let path = "http://localhost:3000/convert-scss"
         let headers = new HttpHeaders();
         headers.set('Content-Type', 'application/json');

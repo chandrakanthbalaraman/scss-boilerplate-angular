@@ -25,6 +25,10 @@ export class SidebarComponent implements OnInit {
             {
                 name:'Color',
                 link:'/pages/color'
+            },
+            {
+                name:'Label',
+                link:'/pages/label'
             }
         ]
      }
