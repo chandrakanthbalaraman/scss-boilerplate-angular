@@ -9,6 +9,7 @@ import { ColorsComponent } from './pages/colors/colors.component';
 import { AlertsComponent } from './pages/alerts/alerts.component';
 import { CardsComponent } from './pages/cards/cards.component';
 import { LabelsComponent } from './pages/labels/labels.component';
+import { DropdownComponent } from './pages/dropdown/dropdown.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,10 @@ const routes: Routes = [
         component : CardsComponent
     },
     {
+        path : 'dropdown',
+        component : DropdownComponent
+    },
+    {
         path : 'label',
         component : LabelsComponent
     }
@@ -41,7 +46,8 @@ const routes: Routes = [
         ColorsComponent,
         AlertsComponent,
         CardsComponent,
-        LabelsComponent 
+        LabelsComponent,
+        DropdownComponent 
     ],
     imports: [ 
         CommonModule,

@@ -5,11 +5,13 @@ import { CommonModule } from '@angular/common';
 import { SidebarComponent } from '../components/sidebar/sidebar.component';
 import { HeaderComponent } from '../components/header/header.component';
 import { AppService } from '../services/app.service';
+import { DropDownDirective } from '../components/dropdown/dropdown.directive';
 
 @NgModule({
     declarations: [
         SidebarComponent,
-        HeaderComponent
+        HeaderComponent,
+        DropDownDirective
     ],
     imports: [ 
         CommonModule,
@@ -18,7 +20,8 @@ import { AppService } from '../services/app.service';
     exports: [
     
         SidebarComponent,
-        HeaderComponent
+        HeaderComponent,
+        DropDownDirective
     ],
     providers: [
         AppService
